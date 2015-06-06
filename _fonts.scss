@@ -1,0 +1,156 @@
+/*	fonts 	*/
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://fonts.gstatic.com/s/droidsans/v6/EFpQQyG9GqCrobXxL-KRMWaVI6zN22yiurzcBKxPjFE.woff2) format('woff2'), url(http://fonts.gstatic.com/s/droidsans/v6/EFpQQyG9GqCrobXxL-KRMXbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaIgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(http://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwf79_ZuUxCigM2DespTnFaw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+
+
+/* /////////////////////////////////////////////////////////////////////
+//  02 - Global
+/////////////////////////////////////////////////////////////////////*/
+
+body {
+	font-size: 100%;
+	font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width:auto; height:auto;
+	padding: 0 0 0 0;
+	margin: 0;
+	color: #7d7d7b;
+	background-color: #1b1b1b;
+}
+
+p {
+	line-height: 1.7em;
+	font-size: .95em;
+	margin: 0 0 20px 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+img {
+	margin: 0;
+}
+
+img.left {
+	margin: 0 15px 15px 0;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a{
+	color: #ccb676;
+}
+
+a:hover {
+	color: #aa9862;
+}
+
+a img {
+	border:none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0 0 15px 0;
+	font-weight: normal;
+	color: #555555;
+	font-family: "Droid Serif", "Georgia", serif;
+}
+
+blockquote, address {
+	margin: 0 0 30px 0;
+	padding: 0 30px 0 30px;
+	font-style: italic;
+	font-size: 1.2em;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	border-left: 5px solid #ccb676;
+}
+
+code {
+    font-family: "Courier New", Courier, serif;
+	overflow: auto;
+	padding: 2px;
+	background: #fff;
+}
+
+pre code {
+	background: none;
+}
+
+pre {
+    margin: 0 0 20px;
+	padding: 10px;
+	background: #fff;
+	overflow: auto;
+	border: 1px solid #e4e4e4;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.meta {
+	color: #b0b0ad;
+}
+
+.meta a{
+	color: #7d7d7b !important;
+}
+
+.meta a:hover{
+	color: #b0b0ad !important;
+}
+
+input[type="text"], textarea {
+	background-color: #fafafa;
+	padding: 10px;
+	font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #6a6a6a;
+	border: 1px solid #ddd;
+	background:	#fafafa url(images/field_bkg.png) repeat-x;
+}
+
+input[type="text"]:focus {outline: none; background-color: #f7f7f7;}
+textarea:focus {outline: none; background-color: #f7f7f7;}
+
+textarea { width: 80%; font-size: 13px;}

@@ -1,0 +1,44 @@
+$include-html-panel-classes: $include-html-classes !default;
+
+// We use these to control the background and border styles
+$panel-bg: scale-color($white, $lightness: -5%) !default;
+$panel-border-style: solid !default;
+$panel-border-size: 1px !default;
+
+// We use this % to control how much we darken things on hover
+$panel-border-color: scale-color($panel-bg, $lightness: -11%) !default;
+
+// We use these to set default inner padding and bottom margin
+$panel-margin-bottom: rem-calc(20) !default;
+$panel-padding: rem-calc(20) !default;
+
+// We use these to set default font colors
+$panel-font-color: $oil !default;
+$panel-font-color-alt: $white !default;
+
+$panel-header-adjust: true !default;
+$callout-panel-link-color: $primary-color !default;
+$callout-panel-bg: scale-color($primary-color, $lightness: 94%) !default;
+
+panel {
+
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;}
+
+.white-panel {
+margin:rem-calc(20);
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+color:$ghost;
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:$white  ,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:20px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+}
+
